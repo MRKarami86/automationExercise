@@ -1,0 +1,52 @@
+
+    <html>
+    <head>
+        <title>Test Report</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            table, th, td {
+                border: 1px solid black;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+            }
+            .pass {
+                background-color: #c8e6c9;
+            }
+            .fail {
+                background-color: #ffcdd2;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Test Report</h1>
+        <table>
+            <tr>
+                <th>Test Name</th>
+                <th>Status Code</th>
+                <th>Status</th>
+                <th>Response</th>
+            </tr>
+            
+            <tr class="pass">
+                <td>Add Image To Pet</td>
+                <td>200</td>
+                <td>PASS</td>
+                <td>{'code': 200, 'type': 'unknown', 'message': 'additionalMetadata: null\nFile uploaded to ./PetDogs.jpg, 5532 bytes'}</td>
+            </tr>
+            
+            <tr class="pass">
+                <td>Add Pet</td>
+                <td>200</td>
+                <td>PASS</td>
+                <td>{'id': 103, 'category': {'id': 1, 'name': 'dogs'}, 'name': 'jimmyPet', 'photoUrls': ['./PetDogs.jpg'], 'tags': [{'id': 0, 'name': 'string'}], 'status': 'available'}</td>
+            </tr>
+            
+        </table>
+    </body>
+    </html>
+    
